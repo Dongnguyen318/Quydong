@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Information {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Information_title {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+.Information_input {
+    border: 1px solid rgb(13, 13, 190);
+    padding: 2px;
+    margin: 2px;
+    width: 12%;
+    box-sizing: border-box;
+}
+
+.Information_server {
+    border: 1px solid rgb(13, 13, 190);
+    padding: 2px;
+    margin: 2px;
+    width: 8%;
+    box-sizing: border-box;
+}
+
+.form_checked {
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.address {
+    position: absolute;
+    top: -11px;
+    left: 128px;
+}
+
+.Check_Energy {
+    display: flex;
+    margin-left: 8%;
+    align-items: center;
+    
+}
+
+.Check__input {
+    padding-left: 6px;
+}
+
+.check__box {
+    position: relative;
+}
+
+.check__box-input {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -8px;
+    left: 134px;
+}

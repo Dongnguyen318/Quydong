@@ -1,0 +1,46 @@
+
+body{
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+   list-style: none;
+}
+
+
+.map-list {
+    padding-left: 0;
+    display: inline-flex;
+    border: 3px solid #ede7d9;
+}
+
+.map-list .map-items{
+    padding: 12px 24px;
+}
+
+.map-items:hover{
+    cursor: pointer;
+    background: #f7b605;
+    color: #000000;
+
+}
+
+.map__inner{
+    display: flex;
+}
+
+.map__inner iframe{
+    border: none;
+    width: 70%;
+    height: 450px;
+    object-fit: cover;
+
+}
+.map__infor{
+    padding: 40px;
+    width: 30%;
+    background: #f6f6f6;
+}

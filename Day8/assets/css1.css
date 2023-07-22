@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: #4f5665;
+    font-weight: 700;
+}
+main{
+    width: 1500px;
+    height: 100px;
+    margin: 0px auto;
+}
+.nav{
+    width: 90%;
+    margin: 20px auto 0px auto;
+    display: flex;
+}
+.text-header{
+    width: 47%;
+    height: 50px;
+    color: #4f5665;
+    font-size: 30px;
+    font-weight: 900;
+}
+.lists-item-nav{
+    display: flex;
+    width: 60%;
+    list-style: none;
+    justify-content: space-between;
+}
+.item-nav{
+    font-weight: 900;
+    font-size: 17px;
+}
+.item-nav:last-child{
+    font-weight: 300;
+}
+.item-nav::after{
+    content: '\f0d7';
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900;
+    margin-left: 5px;
+}
+.search{
+    width: 100px;
+    text-align: right;
+    font-size: 20px;
+}
+.search::before{
+    content: '\f05a';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 15px;
+    color: w;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 3px 1px rgb(206, 205, 205);
+    border-radius: 5px;
+}
+.usage-styleguide{
+    width: 70%;
+}
+.usage-styleguide, .elements{
+    margin: 15px 0px 15px 40px;
+    position: relative;
+}
+.elements::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: -40px;
+    border-left: 1px solid rgb(216, 212, 212);
+}
+.lists-usage, .lists-styleguide, .lists-element{
+    list-style: none;
+    width: 100%;
+    margin-top: 12px;
+}
+.usage-item, .styleguide-item{
+    display: inline-block;
+    width: 49%;
+    height: 30px;
+    margin: 5px 0px;
+}
+.styleguide{
+    margin-top: 45px;
+}
+.item-element{
+    width: 33%;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0px;
+}

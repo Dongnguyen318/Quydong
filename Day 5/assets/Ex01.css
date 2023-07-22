@@ -1,0 +1,150 @@
+main{
+    margin: 0px auto;
+    width: 800px;
+}
+h1{
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    color: #323232;
+    font-weight: 400;
+}
+span{
+    font-family: 'Lato', sans-serif;
+    color: #f85959;
+}
+p{
+    color: #aa9a9a;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 669px;
+}
+.contact, .contact-item-phone{
+    position: relative;
+    display: flex;
+    height: 55px;
+    padding: 10px 0px;
+}
+.contact.contact-item-subject{
+    position: relative;
+    display: flex;
+    height: 55px;
+    padding: 10px 0px;
+}
+.contact-item-message{
+    position: relative;
+    display: flex;
+    height: 215px;
+    padding: 10px 0px;
+}
+.contact-icon{
+    background-color: #dddddd;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+}
+.fa-color{
+    color: white;
+}
+.item{
+    width: 600px;
+    height: 51px;
+    padding: 0px 0px;
+    border: 0px 0px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.contact-icon.message{
+    background-color: #dddddd;
+    height: 203px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+}
+.message.item{
+    height: 200px;
+    padding: 0px 0px;
+    border: 0px 0px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.subject.item{
+    width: 615px; 
+    height: 55px;   
+}
+
+.contact::after, .contact-item-message::after{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005";
+}
+.contact.contact-item-phone::after, .contact-item.contact-item-subject::after{
+    content: "";
+}
+
+.contact:hover span {
+    background-color: #333333;
+}
+.contact:hover input{
+    border: 2px solid ;
+}
+.contact:hover select{
+    border: 2px solid ;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn-submit{
+    width: 140px;
+    height: 45px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+label{
+    font-size: 20px;
+}
+.check{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+input:focus + span{
+    display: block;
+}
+select:focus + span{
+    display: block;
+}
+.using {
+    display: none;
+    top: -52px;
+    left: 55px;
+    width: 160px;
+    height: 50px;
+    color: white;
+    background-color: #333333;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+}
+.using::after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 80px;
+    display: block;
+    border: 17px solid #999;
+    border-color: #333333 transparent transparent transparent;
+}

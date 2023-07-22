@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 650px;
+}
+.overlay{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #7f7f7f;
+    margin: 0px auto;
+}
+.cart{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 60px;
+    padding: 0px 30px 0px 30px;
+
+}
+.cart-header h3{
+    font-size: 28px;
+    position: relative;
+}
+.cart-header h3::after{
+    position: absolute;
+    content: '4';
+    color: white;
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: blue;
+    font-size: 13px;
+    top: -4px;
+    left: 190px;
+}
+.cart-header .icon-close{
+    font-size: 23px;
+    cursor: pointer;
+}
+.cart-lists{
+    overflow-y: scroll;
+    max-height: 282px;
+}
+.cart-list-item{
+    display: flex;
+    align-items: center;
+    background-color: #fbfafa;
+}
+.image-item{
+    padding: 0px 20px 0px 20px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    object-fit: cover        ;
+}
+.item-info{
+    padding-top: 15px;
+    width: 100%;
+}
+
+.add-price{
+    display: flex;
+    margin-top: 15px;
+}
+.name-product{
+    font-weight: 500;
+}
+.name-product::after{
+    position: relative;
+    float: right;
+    top: -10px;
+    margin-right: 20px;
+    font-size: 23px;
+    color: #8a8484;
+    content: '\f00d';
+    font-weight: 900;
+    font-family: 'Font Awesome 6 Free';
+    cursor: pointer;
+}
+.add-item{
+    position: relative;
+    text-align: center;
+    line-height: 32px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #b3acac;
+}
+.add-item::before{
+    content: '-';
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+.add-item::after{
+    content: '+';
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.price{
+    width: 100px;
+    height: 40px;
+    margin-left: 50px;
+    align-items: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.price-subtotal{
+    color: #EF7954;
+}
+.total{
+    margin: 10px 40px 0px 20px;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-subtotal{
+    text-align: right;
+}
+.btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-view-cart{
+    background-color: #fff;
+    border: 1px solid rgb(207, 201, 201);
+}
+.btn-add-to-card{
+    background-color: #4060F3;
+    border: none;
+    color: white;
+}
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.icon-footer-card{
+    font-weight: 900;
+}
+.content-footer-card{
+    font-weight: 700;
+}
+.icon-footer-card{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    text-align: center;
+    line-height: 30px;
+    color: #4060F3;
+}

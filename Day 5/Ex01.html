@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Day 5/assets/Ex01.css" />
+    <title>Ex01</title>
+  </head>
+  <body>
+    <main>
+      <h1>Hey there</h1>
+      <p>
+        <span>We'd like to hear from you.</span> Send us your message or just
+        say hy with our
+        <br />
+        contact form or directly via phone, we love to chat.
+      </p>
+      <form action="#" class="form">
+        <div class="contact">
+          <span class="contact-icon"
+            ><i class="fa-solid fa-user fa-color"></i
+          ></span>
+          <input type="text" placeholder="Your name" class="user item" />
+          <span class="using">Enter Your name</span>
+        </div>
+        <div class="contact">
+          <span class="contact-icon"
+            ><i class="fa-solid fa-envelope fa-color"></i
+          ></span>
+          <input
+            type="email"
+            placeholder="your@domain.com"
+            class="email item"
+          />
+          <span class="using">Enter Your domain</span>
+        </div>
+        <div class="contact contact-item-phone">
+          <span class="contact-icon"
+            ><i class="fa-solid fa-mobile-screen-button fa-color"></i
+          ></span>
+          <input type="number" placeholder="+44 00 123" class="phone item" />
+          <span class="using">Enter Your phone</span>
+        </div>
+        <div class="contact contact-item-subject">
+          <span class="contact-icon"
+            ><i class="fa-solid fa-book fa-color"></i
+          ></span>
+          <select class="subject item">
+            <option value="0">Subject</option>
+            <option value="1">Choose 1</option>
+            <option value="2">Choose 2</option>
+          </select>
+          <span class="using">Choose Your subject</span>
+        </div>
+        <div class="contact contact-item-message">
+          <span class="contact-icon message"
+            ><i class="fa-solid fa-message fa-color"></i
+          ></span>
+          <input type="text" placeholder="Message" class="message item" />
+          <span class="using">Enter Your message</span>
+        </div>
+        <div class="footer">
+          <label for="check"
+            ><input type="checkbox" id="check" class="check" />Send me a copy of
+            this message</label
+          >
+          <button class="btn-submit" type="submit">SEND</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

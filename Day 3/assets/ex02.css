@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+hr {
+    background-color: blue;
+    width: 50px;
+    height: 2px;
+    border: none ;
+}
+.avatar {
+    width: 60px;
+}
+td {
+    padding-top: 30px;
+}

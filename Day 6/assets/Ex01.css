@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav > li {
+    display: block;
+    float: left;
+    padding: 2px 2px;
+    border: 1px solid #666;
+    list-style-type: none;
+}
+
+
+.nav > li > a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    padding: 4px 6px;
+}
+
+.nav li i[class*=fa-solid] {
+    margin-right: 4px;
+}
+
+.nav-contact {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #666;
+    opacity: 0.;
+    color: #666;
+}
+
+.container > li {
+    display: flex;
+    float: left;
+    list-style-type: none;
+  
+
+}
+
+.nav-contact {
+    padding: 2px 2px;
+    border: 1px solid #666;
+}
+
+.nav-contact a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    padding: 4px 6px;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 150px;
+    box-shadow: 1px 1px 2px 4px rgba(225, 225, 225, 0.8);
+
+}
+
+.subnav > li {
+    display: block;
+    list-style-type: none;
+}
+
+.subnav li > a {
+    display: block;
+    text-decoration: none;  
+    color: #666;
+    padding: 12px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav .nav-more {
+    position: relative;
+}
+
+/* subnav and */
+
+.nav li:hover > a {
+    background-color:  #2da5da;
+}
+
+.nav-contact:hover a {
+    background-color: #2da5da;
+}
+
+.nav .nav-more:hover .subnav,
+.nav-more::after {
+    display: block; 
+}
+
+.nav-more::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 10px;
+    display: block;
+    background-color: #fff  ;
+    top: 35px;
+    
+}
+
+.nav-more::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-right: 8px solid transparent;
+    top: 27px;
+}

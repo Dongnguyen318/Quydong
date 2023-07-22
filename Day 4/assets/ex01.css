@@ -1,0 +1,39 @@
+footer{
+    background-color: #334455;
+    border-radius: 10px;
+    width: 80%;
+    cursor: pointer;
+    padding: 20px 25px 15px 15px
+    }
+footer:hover button{
+  color: #ec9323;
+  background-color: #fff;
+}
+.hightlight{
+    color: #ec9323;
+}
+p, h1{
+    color: white;
+}
+input {
+    height: 100%;
+    width: 30%;
+    min-width: 135px;
+    max-width: 250px;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+button {
+    height: 100%;
+    width: 20%;
+    min-width: 135px;
+    max-width: 150px;
+    margin-left: 3px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(247, 234, 91);
+    font-family: 'Roboto Condensed', sans-serif;
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+    <link rel="stylesheet" href="/Day 3/assets/ex03.css" />
+  </head>
+  <body>
+    <section>
+      <div class="Information">
+        <div>
+          <label for="name" class="Information_title">Username: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            class="Information_input"
+          />
+        </div>
+        <div>
+          <label for="passworld" class="Information_title">Password: </label>
+          <input type="password" id="passworld" class="Information_input" />
+        </div>
+        <div>
+          <label for="city" class="Information_title"
+            ><p>
+              City of <br />
+              Employment:
+            </p></label
+          >
+          <input type="text" name="city" id="city" class="Information_input" />
+        </div>
+        <div>
+          <label for="server" class="Information_title">Web server: </label>
+          <select name="server" id="server" class="Information_server">
+            <option value="0">--Chose a server--</option>
+            <optgroup label="Server 1">
+              <option value="1">Yushing</option>
+              <option value="2">Start</option>
+            </optgroup>
+            <optgroup label="Server 2">
+              <option value="3">NameSpace</option>
+              <option value="4">Black Start</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form_checked">
+          <label for="radio" style="font-weight: bold"
+            >Please specify <br />
+            your role:
+          </label>
+         <div class="address">
+            <div class="check">
+                <label class="Check_Energy">
+                    <input type="radio" name="Admin" id="radio" value="0" /> <p class="Check__input"> Admin</p>
+                  </label>
+              </div>
+              <div lass="check">
+                <label class="Check_Energy">
+                    <input type="radio" name="Admin" id="radio" value="1"  /> <p class="Check__input"> Engineer</p>
+                  </label class="Check_Energy">
+              </div>
+             <div lass="check">
+                <label class="Check_Energy">
+                    <input type="radio" name="Admin" id="radio" value="2" /> <p class="Check__input" >Manager</p>
+                  </label class="Check_Energy">
+             </div>
+             <div lass="check">
+                <label class="Check_Energy">
+                    <input type="radio" name="Admin" id="radio" value="3" /> <p class="Check__input" > Guest</p>
+                  </label>
+             </div>
+         </div>
+        </div>
+        <div class="check__box">
+          <label for="checkbox" style="font-weight: bold;"><p>Single Sign-on <br> the flowing: </p></label>
+          <div class="check__box-input">
+            <label>
+                <input type="checkbox" name="mail" id="checkbox" value="1" /> Mail
+              </label>
+              <label>
+                <input type="checkbox" name="payroll" id="checkbox" value="2" />
+                Payroll
+              </label>
+              <label>
+                <input type="checkbox" name="service" id="checkbox" value="3" />
+                Self-service
+              </label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.form-booking {
+    width: 100%;
+    min-width: 315px;
+    color: rgba(80, 39, 5, 0.941);
+}
+
+.reservation {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+.info-booking {
+    margin-top: 20px;
+    height: 45px;
+}
+
+.info {
+    width: 30%;
+    min-width: 103px;
+    height: 100%;
+    margin-right: 20px;
+    border: 1px solid;
+    border-color: #c6c4c4;
+}
+
+::placeholder {
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #555151;
+}
+
+button {
+    width: 30.6%;
+    min-width: 110px;
+    height: 110%;
+    padding: 0px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(167, 49, 49);
+    cursor: pointer;
+}
+button:hover{
+    background-color: blue;
+}
