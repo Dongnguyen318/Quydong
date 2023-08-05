@@ -1,0 +1,20 @@
+var a=10,
+    b=6,
+    c=4,
+     temp;
+    if(a>=b){
+        temp=a;
+        a=b;
+        b=temp;
+    }
+    if(a>=c){
+        temp=a;
+        a=c;
+        c=temp;
+    }
+    if(b>=c){
+        temp=b;
+        b=c;
+        c=temp;
+    }
+console.log(`a=${a},b=${b},c=${c}`)
