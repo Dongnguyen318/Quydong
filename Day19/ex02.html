@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <script src="./js/2.js"></script>
+  </head>
+  <body>
+    <pre style="background-color: rgb(255, 242, 0)">
+        <code >
+            <h2 style="text-align: center;"># Bài 2: Cho trước 1 mảng số nguyên, tính trung bình các số nguyên tố trong mảng. Nếu trong mảng không có số nguyên tố thì hiển thị “Không có số nguyên tố”</h2>
+<p style="text-align: center;">
+
+</p>
+        </code>
+    </pre>
+    <br />
+    <br />
+    <pre>
+        <code class="language-js">
+            function prime(n) {
+                for (var i = 2; i <= Math.sqrt(n); i++) {
+                  if (n % i === 0) {
+                    return false;
+                  }
+                }
+                return n > 1;
+              }
+              
+              function sumPrime(arr) {
+                var sum = 0;
+                var count = 0;
+                for (var i = 0; i < arr.length; i++) {
+                  if (prime(arr[i])) {
+                    sum += arr[i];
+                    count++;
+                  }
+                }
+                if (count !== 0) {
+                  console.log((1.0 * sum) / count);
+                } else {
+                  console.log("Không có số nguyên tố");
+                }
+              }
+              
+              sumPrime([5, 9, 11]);
+              
+        </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
