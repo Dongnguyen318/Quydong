@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <script src="./js/2.js"></script>
+  </head>
+  <body>
+    <pre style="background-color: rgb(255, 242, 0)">
+        <code >
+            <h2 style="text-align: center;">Làm phẳng array sau (Chuyển về mảng 1 chiều)</h2>
+<p style="text-align: center;" >
+    <code class="language-js"style="padding: 30px;">
+        var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+    </code>
+    <h2 style="padding: 15px;" > Kết quả</h2>
+    <code class="language-js" style="padding: 30px;">
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+    </code>
+
+
+</p>
+        </code>
+    </pre>
+    <br />
+    <br />
+    <pre>
+        <code class="language-js">
+            var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+            function flat(arr = []) {
+              return arr.reduce((first, el) => {
+                return first.concat(Array.isArray(el) ? flat(el) : el);
+              }, []);
+            }
+            const result = flat(arr);
+            console.log("Mảng ban đầu: ", arr);
+            console.log("Mảng sau khi làm phẳng: ", result);
+            
+
+
+        </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
