@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <script src="./js/2.js"></script>
+  </head>
+  <body>
+    <pre style="background-color: rgb(255, 242, 0)">
+        <code >
+            <h2 style="text-align: center;">Viết một hàm tạo (Constructor) để khởi tạo ra một đối tượng có 3 thuộc tính: name, age và address.
+
+                Sau đó viết một hàm nhận vào một mảng chứa nhiều đối tượng để khởi tạo ra một mảng mới chứa các đối tượng có cấu trúc như trên.
+                
+                Kết quả trả về là một mảng chứa tất cả thông tin của các đối tượng đó được sắp xết tăng dần theo tuổi và thêm một thuộc tính mới là shortName của mỗi đối tượng.</h2>
+<p style="text-align: center;">
+    <pre>
+        <code class="language-js">
+const customers = [
+  { name: "Nguyễn Văn A", age: 11, address: "Ha Noi" },
+  { name: "Nguyễn Văn B", age: 2, address: "Hai Phong" },
+  { name: "Nguyễn Văn C", age: 12, address: "TP.HCM" },
+];
+
+const result = createCustomers(customers); // Tạo hàm createCustomers này. return về mảng mới.
+        </code>
+    </pre>
+    <h2 style="padding: 15px;" > Kết quả</h2>
+
+
+</p>
+        </code>
+    </pre>
+    <br />
+    <br />
+    <pre>
+        <code class="language-js">
+            var errors = {
+                name: {
+                    required: "Vui lòng nhập họ tên",
+                    min: "Họ tên phải từ 5 ký tự"
+                },
+                email: {
+                    email: "Định dạng email không hợp lệ",
+                    unique: "Email đã có người sử dụng",
+                    required: "Vui lòng nhập địa chỉ email"
+                },
+                password: {
+                    required: "Vui lòng nhập mật khẩu",
+                    same: "Mật khẩu phải khớp với mật khẩu nhập lại"
+                },
+                getError: function (field) {
+                    return Object.values(this[field])[0];
+                }
+            }
+            
+            console.log(errors.getError("name"));
+        </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>

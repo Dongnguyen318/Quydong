@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <script src="./js/2.js"></script>
+  </head>
+  <body>
+    <pre style="background-color: rgb(255, 242, 0)">
+        <code >
+            <h2>Viết một hàm tạo (Constructor) để khởi tạo ra một đối tượng có 3 thuộc tính: name, age và address.
+
+                Sau đó viết một hàm nhận vào một mảng chứa nhiều đối tượng để khởi tạo ra một mảng mới chứa các đối tượng có cấu trúc như trên.
+                
+                Kết quả trả về là một mảng chứa tất cả thông tin của các đối tượng đó được sắp xết tăng dần theo tuổi và thêm một thuộc tính mới là shortName của mỗi đối tượng.</h2>
+<p >
+    <pre>
+        <code class="language-js">
+const customers = [
+  { name: "Nguyễn Văn A", age: 11, address: "Ha Noi" },
+  { name: "Nguyễn Văn B", age: 2, address: "Hai Phong" },
+  { name: "Nguyễn Văn C", age: 12, address: "TP.HCM" },
+];
+
+const result = createCustomers(customers); // Tạo hàm createCustomers này. return về mảng mới.
+        </code>
+    </pre>
+    <h2 style="padding: 15px;" > Kết quả</h2>
+    <pre>
+        <code class="language-js" style="padding: 30px;">
+            result = [
+            { name: "Nguyễn Văn B", age: 2, address: "Hai Phong", shortName: "Nguyễn B" },
+            { name: "Nguyễn Văn A", age: 11, address: "Ha Noi", shortName: "Nguyễn A" },
+            { name: "Nguyễn Văn C", age: 12, address: "TP.HCM", shortName: "Nguyễn C" },
+          ];
+    
+        </code>
+    </pre>
+    
+
+
+</p>
+        </code>
+    </pre>
+    <br />
+    <br />
+    <pre>
+        <code class="language-js">
+            var customers = [
+  { name: "Nguyễn Văn A", age: 11, address: "Ha Noi" },
+  { name: "Nguyễn Văn B", age: 22, address: "Hai Phong" },
+  { name: "Nguyễn Văn C", age: 12, address: "TP.HCM" },
+];
+
+var Customer = function (name, age, address) {
+  this.name = name;
+  this.age = age;
+  this.address = address;
+};
+
+var result = [];
+
+function createCustomers(customers) {
+  for (var key of customers) {
+    new Customer(key.name, key.age, key.address);
+    var getName = key.name.split(" ");
+    getName.splice(1, getName.length - 2);
+    key["shortName"] = getName.join(" ");
+    result.push(key);
+  }
+  return result.sort((a, b) => a.age - b.age);
+}
+console.log(createCustomers(customers));
+
+        </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>

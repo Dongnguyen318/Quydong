@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <script src="./js/1.js"></script>
+  </head>
+  <body>
+    <pre style="background-color: rgb(255, 242, 0)">
+        <code >
+            <h2 style="text-align: center;">Yêu cầu: Viết hàm getError(field) có tham số truyền vào là field tương ứng với nhóm cần lấy lỗi. Tuy nhiên, chỉ trả về 1 chuỗi là lỗi đầu tiên tìm được(lỗi đầu tiên đúng) của 1 nhóm</h2>
+<p style="text-align: center;">
+    <code class="language-js">
+        var arrA = [1, 4, 3, 2];
+        var arrB = [5, 2, 6, 7, 1];
+    </code>
+    <h2 style="padding: 15px;" > Kết quả</h2>
+    <code class="language-js" style="padding: 15px 30px 20px;">
+        [1,2]
+    </code>
+
+
+</p>
+        </code>
+    </pre>
+    <br />
+    <br />
+    <pre>
+        <code class="language-js">
+var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+var result1 = arrA.reduce((first, el) => {
+  return arrB.includes(el) && first.push(el), first;
+}, []);
+console.log("Kết quả giao giữa 2 mảng là: ", result1);
+
+
+        </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
