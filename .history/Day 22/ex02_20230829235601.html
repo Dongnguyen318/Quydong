@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <script src="./js/2.js"></script>
+  </head>
+  <body>
+    <pre style="background-color: rgb(255, 242, 0)">
+        <code >
+            <h2>Viết 1 phương thức Prototype có tên là getCurrency có đối số truyền vào là đơn vị tiền tệ cần hiển thị
+
+Kết quả sẽ hiển thị ra kết định dạng kèm đơn vị tiền tệ</h2>
+<p style="text-align: center;">
+    <code class="language-js">
+    </code>
+    <h2 style="padding: 15px;" > Ví dụ</h2>
+    <code class="language-js" style="padding: 15px 30px 20px;">
+    </code>
+
+
+</p>
+        </code>
+    </pre>
+    <br />
+    <br />
+    <pre>
+        <code class="language-js">
+            const price = 120000;
+Number.prototype.getCurrency = function (unit) {
+  return this.toLocaleString() + ` ${unit}`;
+};
+console.log(price.getCurrency("đ"));
+
+
+
+        </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
