@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-23</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./assets/css.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.742f36bc45f3443d0e59.svg"
+          alt=""
+          class="logo"
+        />
+        <div class="sign-up">
+          <a href="#!" class="sign-up__link">Đăng nhập</a>
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="userAction">
+        <div class="user-form">
+          <div class="btn_action">
+            <button class="sign-in-form btn active">Đăng nhập</button>
+            <button class="sign-up-form btn">Đăng kí</button>
+          </div>
+          <div class="user-form__wrapper">
+            <div class="form-sign-in active">
+              <div class="form-action">
+                <p class="form-action__desc">với các tài khoản mạng xã hội</p>
+                <div class="form-action__socials">
+                  <div class="google social">
+                    <img
+                      src="https://cdnweb.dantri.com.vn/dist/7d0beed56ca1d379fbc0.svg"
+                      alt=""
+                    />
+                    <span>Google</span>
+                  </div>
+                  <div class="fb social">
+                    <img
+                      src="https://cdnweb.dantri.com.vn/dist/f5ae7e06d5a6fc5ebaff.svg"
+                      alt=""
+                    />
+                    <span>Facebook</span>
+                  </div>
+                </div>
+                <div class="form-action__seperate">
+                  <span class="form-action__seperate__desc">hoặc</span>
+                </div>
+              </div>
+              <form action="" method="get" class="form">
+                <p class="alert-account">Account not existed.</p>
+                <div class="user-control">
+                  <label for="email">Email</label>
+                  <div class="user-enter">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <p class="error">Vui lòng nhập thông tin</p>
+                </div>
+                <div class="user-control">
+                  <label for="password">Mật khẩu</label>
+                  <div class="user-enter user-enter-password">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Mật khẩu"
+                    />
+                    <i class="fa-regular fa-eye user-enter-password__open"></i>
+                    <i
+                      class="fa-regular fa-eye-slash user-enter-password__hidden show-password"
+                    ></i>
+                  </div>
+                </div>
+                <p class="password-error">Vui lòng nhập thông tin</p>
+                <p class="password-forgot" style="text-align: right">
+                  <a href="#!">Quên mật khẩu?</a>
+                </p>
+
+                <button type="submit" class="btn btn-form">Đăng nhập</button>
+              </form>
+            </div>
+            <div class="form-sign-up">
+              <p class="form-sign-up__desc">
+                Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+              </p>
+              <form action="" method="get" class="form form-2">
+                <p class="alert-account">Account not existed.</p>
+                <div class="user-control">
+                  <label for="Họ và tên">Họ và tên</label>
+                  <div class="user-enter">
+                    <input
+                      type="name"
+                      name="name"
+                      id="name"
+                      placeholder="Họ và tên"
+                    />
+                  </div>
+                  <p class="error-name">Vui lòng nhập thông tin</p>
+                </div>
+                <div class="user-control">
+                  <label for="email">Email</label>
+                  <div class="user-enter">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email-2"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <p class="error">Vui lòng nhập thông tin</p>
+                </div>
+                <div class="user-control">
+                  <label for="password">Mật khẩu</label>
+                  <div class="user-enter user-enter-password">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password-2"
+                      placeholder="Mật khẩu"
+                    />
+                    <i class="fa-regular fa-eye user-enter-password__open"></i>
+                    <i
+                      class="fa-regular fa-eye-slash user-enter-password__hidden show-password"
+                    ></i>
+                  </div>
+                </div>
+                <p class="password-error">Vui lòng nhập thông tin</p>
+                <p class="form-sign-up__note">
+                  Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+                  <span class="form-sign-up__highlight"
+                    >điều kiện về qui định và chính sách của Dân trí</span
+                  >
+                </p>
+                <button type="submit" class="btn btn-sign-up">Đăng ký</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
