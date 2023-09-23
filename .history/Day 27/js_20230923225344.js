@@ -4,7 +4,7 @@ const cartList = document.querySelector(".cart-list");
 const cartListTable = cartList.querySelector(".cart-list-table");
 const editBtn = cartList.querySelector(".edit-btn");
 
-// tạo sản phẩm
+// tạo sản phẩm trong bảng
 let arrProducts = [
   { productName: "Sản phẩm 1", price: 1000 },
   { productName: "Sản phẩm 2", price: 2000 },
@@ -32,7 +32,8 @@ listInput.forEach(function (element) {
   element.value = 1;
 });
 
-// thêm sản phẩm vào giở
+// thêm sản phẩm vào list
+
 function getParentElement(childElement, level = 1) {
   while (level > 0) {
     childElement = childElement.parentElement;
@@ -208,35 +209,4 @@ productListTable.addEventListener("click", function (e) {
     }
   }
 });
-
 // xoá sản phẩm
-let rowCartItem;
-
-cartListTable.addEventListener("click", function (e) {
-  target = e.target;
-  if (target.classList.contains("delete-btn")) {
-    rowCartItem = getParentElement(target, 2);
-    for (let i = 0; i < arrCartProduct.length; i++) {
-      if (rowCartItem.children[1].innerText === arrCartProduct[i].name) {
-        arrCartProduct.splice(i, 1);
-        localStorage.setItem("cart", JSON.stringify(arrCartProduct));
-        rowCartItem.remove();
-        if (arrCartProduct.length > 0) {
-          rowCartTotal.children[1].innerText = 0;
-          rowCartTotal.children[2].innerText = 0;
-          for (let j = 0; j < arrCartProduct.length; j++) {
-            rowCartTotal.children[1].innerText =
-              +rowCartTotal.children[1].innerText + +arrCartProduct[j].quantity;
-            rowCartTotal.children[2].innerText =
-              +rowCartTotal.children[2].innerText + +arrCartProduct[j].perTotal;
-          }
-        } else if (arrCartProduct.length === 0) {
-          cartListTable.innerHTML = "";
-          cartListTable.previousElementSibling.style.display = "block";
-          editBtn.innerHTML = "";
-        }
-        break;
-      }
-    }
-  }
-});

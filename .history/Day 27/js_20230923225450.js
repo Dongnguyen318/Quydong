@@ -26,13 +26,14 @@ arrProducts.forEach(function (element, index) {
   productListTable.children[1].append(tableRow);
 });
 
+// Resetup input
 let listInput = productListTable.querySelectorAll("input");
 
 listInput.forEach(function (element) {
   element.value = 1;
 });
 
-// thêm sản phẩm vào giở
+// Add product into cart list
 function getParentElement(childElement, level = 1) {
   while (level > 0) {
     childElement = childElement.parentElement;
@@ -209,7 +210,7 @@ productListTable.addEventListener("click", function (e) {
   }
 });
 
-// xoá sản phẩm
+// Delete rowCartItem and delete in local storage
 let rowCartItem;
 
 cartListTable.addEventListener("click", function (e) {
