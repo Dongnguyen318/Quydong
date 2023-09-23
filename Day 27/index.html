@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .cart-list .cart-list-table,
+      .product-list .product-list-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .cart-list .cart-list-table th,
+      .cart-list .cart-list-table td,
+      .product-list .product-list-table th,
+      .product-list .product-list-table td {
+        border: 2px solid rgb(103, 103, 103);
+        padding: 0;
+        margin: 0;
+      }
+
+      .product-list .product-list-table td:last-child {
+        text-align: center;
+      }
+
+      .product-list .product-list-table button {
+        width: 100%;
+      }
+
+      .product-list .product-list-table input {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="product-list">
+      <h3 class="product-list-heading">DANH SÁCH SẢN PHẨM</h3>
+      <table class="product-list-table">
+        <thead>
+          <tr>
+            <th width="5%">STT</th>
+            <th width="75%">Tên sản phẩm</th>
+            <th width="10%">Giá</th>
+            <th width="10%">Thêm vào giỏ</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="cart-list">
+      <h3 class="cart-list-heading">GIỎ HÀNG</h3>
+      <p class="cart-empty">Giỏ hàng không có sản phẩm</p>
+      <table class="cart-list-table"></table>
+
+      <div class="edit-btn"></div>
+    </div>
+    <script src="./js.js"></script>
+  </body>
+</html>

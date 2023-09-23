@@ -109,11 +109,4 @@ audio.addEventListener("ended", function () {
   progress.style.width = 0;
 });
 
-// ấn để tua chưa hoàn thiệm
-progressBar.addEventListener("mouseup", function () {
-  isDrag = false;
-  initialTime = current;
-  var currentTime = (audio.duration * current) / progressWidth;
-  currentTimeEl.innerText = getTime(currentTime);
-  audio.currentTime = currentTime;
-});
+// ấn để tua chưa hoàn thiệm :(
