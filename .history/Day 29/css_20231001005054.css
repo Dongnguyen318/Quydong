@@ -1,0 +1,18 @@
+.list {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+  margin: auto;
+  border: 1rem solid #90537d;
+  color: white;
+}
+
+.list-item {
+  background-color: #962dd2;
+  padding: 10px;
+  margin-bottom: 1px;
+  cursor: move;
+}
+.active.list-item {
+  background-color: #4e1f62;
+}
