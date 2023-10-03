@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Doc Editor</h1>
+      </div>
+      <div class="main-control">
+        <div class="menu">
+          <div class="dropdown">
+            <button class="btn btn-primary" type="button">
+              File <i class="fa-solid fa-arrow-down-long"></i>
+            </button>
+            <div class="collapse">
+              <button class="dropdown-item btn-new">New</button>
+              <button class="dropdown-item btn-txt">Save as TXT</button>
+              <button class="dropdown-item btn-pdf">Save as PDF</button>
+            </div>
+          </div>
+          <input type="text" class="value-input" placeholder="Nhập tên flie" />
+        </div>
+        <div class="control-btn">
+          <button class="btn btn-property btn-bold"><b>b</b></button>
+          <button class="btn btn-property btn-underline"><u>u</u></button>
+          <button class="btn btn-property btn-italic"><i>i</i></button>
+          <input type="color" class="control-btn-item" id="color" />
+        </div>
+      </div>
+      <div class="content" contenteditable="true" spellcheck="false"></div>
+      <div class="count">
+        <span class="count-char">Số ký tự: 0</span>
+        <span class="count-word">Số từ: 0</span>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="./js.js"></script> -->
+  </body>
+</html>
