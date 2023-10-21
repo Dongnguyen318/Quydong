@@ -1,0 +1,32 @@
+//Built HTTP Client
+import { config } from "./config.js";
+const { SERVER_API } = config;
+export const client = {
+  send: async (url, method = "GET", body = null) => {
+    url = SERVER_API + url;
+    const options = {
+      method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    if (body) {
+      options.body = JSON.stringify(body);
+    }
+    const response = await fetch(url, options);
+    const data = await response.json();
+    return { response, data };
+  },
+  get: function (url) {
+    return this.send(url);
+  },
+  post: function (url, body) {
+    return this.send(url, "POST", body);
+  },
+  put: function (url, body) {
+    return this.send(url, "PUT", body);
+  },
+  delete: function (url) {
+    return this.send(url, "DELETE");
+  },
+};
