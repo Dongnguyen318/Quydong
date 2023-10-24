@@ -3,7 +3,13 @@
     "development"
   ],
   "hints": {
-    "axe/formis": "off"
-  
+    "axe/formis": "off",
+    "button-type": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
+    ]
   }
 }

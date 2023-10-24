@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="quiz__start">
+            <button class="btn-start">Start</button>
+        </div>
+        <div class="quiz-wrapper">
+            <div class="quiz__time">
+                <div class="quiz__run-time"></div>
+            </div>
+            <div class="quiz__action">
+                <div class="quiz__action-sentence"></div>
+                <div class="quiz__action-score">Score: <span>0</span></div>
+            </div>
+
+            <div class="container">
+                </div> 
+            </div>
+            <div class="quiz__status"></div>
+        </div>
+        <div class="quiz__stop">
+            <div class="quiz__stop-content">
+                <p class="title" style="font-size: 2rem;">Game performance</p>
+                <div class="quiz__stop-rate">
+                    <div class="quiz__stop-rate-correct"></div>
+                </div>
+                <div class="quiz__stop-result" style="margin-top: 30px;">
+                    <div class="quiz__incorrect">Incorrect <span></span></div>
+                    <div class="quiz__correct">Correct <span>0</span></div>
+                </div>
+                <p class="quiz__stop-score">: <span style="margin-left: 5px;"></span></p>
+                <button class="btn-play-again">Play Again</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
