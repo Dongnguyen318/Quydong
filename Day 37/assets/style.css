@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+p,
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.post-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.post-block .username {
+  margin-bottom: 5px;
+  padding-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.post-block .post-block-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+
+.post-block .post-block-content {
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.post-date,
+.post-time {
+  width: 150px;
+  max-width: 100%;
+  text-align: right;
+}
